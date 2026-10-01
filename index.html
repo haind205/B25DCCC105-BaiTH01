@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngô Đại Hải - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" title="Chuyển đổi giao diện">
+        <div class="toggle-thumb" id="toggle-icon">☀️</div>
+    </button>
+
+    <header>
+        <nav>
+            <div class="logo">Ngô Đại Hải</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="reveal">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="avatar.JPG" alt="Avatar Ngô Đại Hải">
+            </div>
+            <div class="about-text">
+                <h1>Chào bạn, mình là Ngô Đại Hải</h1>
+                <p>Mình hiện là sinh viên Công nghệ thông tin tại Học viện Công nghệ Bưu chính Viễn thông (PTIT). Mình có niềm đam mê lớn với lập trình Python, đặc biệt là Computer Vision, và đang định hướng phát triển sự nghiệp trở thành một Kỹ sư AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2>Kỹ năng của mình</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Phát triển Desktop App (Pygame), xử lý Computer Vision.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>Thành thạo HTML, CSS, JavaScript cơ bản.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Cơ sở dữ liệu</h3>
+                <p>Thiết kế ERD, tối ưu hóa truy vấn SQL.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Công cụ</h3>
+                <p>Quản lý mã nguồn với Git & GitHub.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2>Dự án tiêu biểu</h2>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Tìm kiếm dự án theo từ khóa (VD: Web, Python, Database)...">
+        </div>
+
+        <div class="projects-flex">
+            <div class="project-card" data-tags="web html css js messi bóng đá">
+                <h3>Messi Interactive Web</h3>
+                <p>Trang web tương tác vinh danh sự nghiệp của Lionel Messi, sử dụng HTML/CSS/JS thuần để tạo hiệu ứng mượt mà.</p>
+            </div>
+            <div class="project-card" data-tags="database sql siêu thị erd">
+                <h3>Database Quản lý siêu thị</h3>
+                <p>Thiết kế lược đồ quan hệ ER và viết các kịch bản truy vấn SQL phức tạp để quản lý hệ thống bán hàng.</p>
+            </div>
+            <div class="project-card" data-tags="python pygame app exe đếm ngược">
+                <h3>Countdown Timer App</h3>
+                <p>Ứng dụng đếm ngược thời gian với giao diện đồ họa, lập trình bằng Pygame và đóng gói (.exe) bằng PyInstaller.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Liên hệ với mình</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Tên của bạn">
+                <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email của bạn">
+                <span class="error-msg" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Tin nhắn của bạn..."></textarea>
+                <span class="error-msg" id="message-error"></span>
+            </div>
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Ngô Đại Hải.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
